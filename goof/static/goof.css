@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(27, 27, 27);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 55px;
+    font-family: sans-serif;
+    color: rgb(214, 214, 214);
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding-top: 16%;
+    padding-bottom: 20%;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(214, 214, 214);
+    text-align: center;
+}
+
+/* nav bar style */
+nav {
+    margin: 0;
+    padding: 0;
+    max-width:100%;
+    background-color:rgb(10, 10, 10);
+    border-bottom: blue 2px solid;
+}
+.nav-links{
+    font-size: 20px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+a:link{
+    display:inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color:white;
+}
+a:visited{
+    color:white;
+}
+.nav-item:hover a {
+    color: rgb(34, 185, 255);
+}
+/* change later */
+@media screen and (min-width:1200px){
+
+    h1 {
+        font-weight: 600;
+        font-size: 75px;
+        font-family: sans-serif;
+        color: rgb(214, 214, 214);
+        text-align: center;
+    }
+}
+@media screen and (max-width:800px){
+    .nav-links{
+      flex-direction: column;
+      text-align: left;
+      padding:0;
+    }
+    .nav-item:last-of-type{
+      text-align:left;
+      padding: 0;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 35px;
+        font-family: sans-serif;
+        color: rgb(214, 214, 214);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    h1 {
+        font-weight: 600;
+        font-size: 25px;
+        font-family: sans-serif;
+        color: rgb(214, 214, 214);
+        text-align: center;
+    }
+}
+
+/* header style */
+
+.header {
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    background-image: url("vexBackground.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: rgb(255, 230, 0) 2px solid;
+}
