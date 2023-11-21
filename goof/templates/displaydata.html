@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/baseformatting.css') }}">
+</head>
+<body>
+<a href="{{ url_for('home') }}">Click here to go back to the main page.</a>
+<br>
+<br>
+
+<br>
+
+{%if in_table == True%}
+<table>
+{%for i in range(0,19)%}
+<tr>
+  {%for j in range(0,len2)%} 
+  
+    {%if j == 0%}
+    <th>{{teamDataDB[j][i]}}</th>
+    {%else%}
+    <td>{{teamDataDB[j][i]}}</td>
+    {%endif%}    
+  
+  {%endfor%}
+</tr>
+{%endfor%}
+</table>
+
+{%else%}
+
+<p>Not in table</p>
+
+{%endif%}
+
+</body>
+</html>
